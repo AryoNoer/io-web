@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,20 +12,26 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white sticky top-0 z-[1000]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className=" md:shadow-sm shadow-teal-300 sticky top-0 md:top-4 z-[1000]">
+      <div className=" md:bg-gradient-to-r from-dark-1 to-dark-2 rounded-full md:mr-32 md:ml-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between md:justify-center h-16">
           <div className="flex items-center">
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="#">
-                  <p className="text-gray-500 hover:text-gray-800">Home</p>
+                  <p className="text-light-1 font-bold hover:text-light-2">
+                    Home
+                  </p>
                 </Link>
                 <Link href="#">
-                  <p className="text-gray-500 hover:text-gray-800">Blog</p>
+                  <p className="text-light-1 font-bold hover:text-light-2">
+                    Blog
+                  </p>
                 </Link>
                 <Link href="#">
-                  <p className="text-gray-500 hover:text-gray-800">Contact</p>
+                  <p className="text-light-1 font-bold hover:text-light-2">
+                    Contact
+                  </p>
                 </Link>
               </div>
             </div>
@@ -33,7 +40,7 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:33 outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="bg-light-1 rounded-full p-2 inline-flex items-center justify-center text-dark-2 hover:text-dark-2 hover:bg-gray-100 focus:33 outline-none focus:ring-2 focus:ring-inset focus:ring-light-2"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -56,29 +63,42 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.1 }} // Adjust the duration as needed
-            className="md:hidden px-2 pt-2 pb-3 space-y-1"
+            transition={{ duration: 0.1 }}
+            className="md:hidden px-2 pt-2 pb-3 space-y-1 flex flex-col items-end" // Updated class to flex and items-end
           >
             <Link href="#">
-              <p className="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-                Home
-              </p>
+              <Image
+                className="bg-light-1 p-3 mb-3 rounded-full"
+                src="/House.png"
+                alt="Logo"
+                width={40}
+                height={40}
+              />
             </Link>
             <Link href="#">
-              <p className="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-                Blog
-              </p>
+              <Image
+                className="bg-light-1 p-3 mb-3 rounded-full"
+                src="/Newspaper.png"
+                alt="Logo"
+                width={40}
+                height={40}
+              />
             </Link>
             <Link href="#">
-              <p className="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium">
-                Contact
-              </p>
+              <Image
+                className="bg-light-1 p-3 mb-3 rounded-full"
+                src="/E Mail.png"
+                alt="Logo"
+                width={40}
+                height={40}
+              />
             </Link>
           </motion.div>
         )}
