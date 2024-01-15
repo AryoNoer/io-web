@@ -1,23 +1,22 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 function Desc() {
   return (
-    <motion.div initial="hidden" animate="visible" className="flex flex-col">
+    <div className="flex flex-col my-4 ml-2">
       <div className="w-full">
-        <div className="mt-4">
+        <div className="">
           <h1 className="text-white text-2xl md:text-3xl font-semibold">
             I&apos;m a guy who&apos;s interested in diving into the
             <span className="text-3xl md:text-5xl"> backend</span>
           </h1>
-          <h1 className="text-white text-base md:text-3xl font-semibold mt-4">
+          <h1 className="text-white text-base md:text-3xl font-semibold mt-2">
             with
-            <span className="text-3xl md:text-5xl text-light-2">
+            <span className="text-2xl md:text-5xl text-light-2">
               {" "}
               Node.js
             </span>{" "}
             and{" "}
-            <span className="text-3xl md:text-5xl text-light-2">
+            <span className="text-2xl md:text-5xl text-light-2">
               {" "}
               Typescript
             </span>
@@ -36,7 +35,7 @@ function Desc() {
           </h1>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

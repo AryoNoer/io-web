@@ -3,11 +3,12 @@
 import Contact from "@/components/animated/contact";
 import Projects from "@/components/animated/projects";
 import Hero from "@/components/animated/hero";
-import GiftIcon from "@/components/animated/hola";
 import Desc from "@/components/animated/desc";
+import Hola from "@/components/animated/hola";
+import Skills from "@/components/animated/skills";
 export default function Home() {
   return (
-    <main className="">
+    <main className="scroll-smooth focus:scroll-auto">
       {/* section 1 */}
       <section
         id="header"
@@ -22,12 +23,18 @@ export default function Home() {
         <div id="contact" className="mb-5 md:my-12">
           <Contact />
         </div>
-        <div id="icon" className="mb-5 md:my-5">
-          <GiftIcon />
+        <div>
+          <Hola />
         </div>
       </section>
       {/* section 2 */}
-      <section className="flex flex-col items-center justify-center mt-16">
+      <section>
+        <div>
+          <Skills />
+        </div>
+      </section>
+      {/* section 3 */}
+      <section className="flex flex-col items-center justify-center mt-40">
         <div className="mb-5 md:my-5">
           <Projects />
         </div>
