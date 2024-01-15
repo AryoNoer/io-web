@@ -12,7 +12,7 @@ export default function Home() {
       {/* section 1 */}
       <section
         id="header"
-        className="w-[345px] md:w-[1068px] mx-auto bg-gradient-to-tr from-dark-1 to-dark-2 p-2 rounded-3xl mt-10"
+        className="w-[345px] md:w-[1068px] mx-auto bg-gradient-to-tr from-dark-1 to-dark-2 p-2 rounded-3xl mt-20"
       >
         <div id="hero" className="mb-5">
           <Hero />

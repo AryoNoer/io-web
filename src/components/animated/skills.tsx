@@ -80,7 +80,7 @@ const Skills: React.FC = () => {
             key={skill.id}
             className="flex flex-col items-center mb-4 sm:mb-0 skill-item"
           >
-            <div className="bg-white p-4 rounded-lg mb-2">
+            <div className="bg-white p-4 rounded-lg mb-2 hover:scale-75 duration-300">
               <div className="text-2xl sm:text-4xl">{skill.icon}</div>
             </div>
             <p className="text-sm sm:text-base">{skill.name}</p>
