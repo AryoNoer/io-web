@@ -83,7 +83,6 @@ const Skills: React.FC = () => {
             <div className="bg-white p-4 rounded-lg mb-2 hover:scale-75 duration-300">
               <div className="text-2xl sm:text-4xl">{skill.icon}</div>
             </div>
-            <p className="text-sm sm:text-base">{skill.name}</p>
           </div>
         ))}
       </div>

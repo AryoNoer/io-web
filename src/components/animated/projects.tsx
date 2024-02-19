@@ -7,31 +7,37 @@ const Projects: React.FC = () => {
       title: "Project 1",
       imageUrl: "/project1.png",
       description: "This is project 1 description",
+      URL: "https://instagram.com/aryonoer",
     },
     {
       title: "Project 2",
       imageUrl: "/project1.png",
       description: "This is project 2 description",
+      URL: "https://github.com/aryonoer",
     },
     {
       title: "Project 3",
       imageUrl: "/project1.png",
       description: "This is project 3 description",
+      URL: "https://github.com/aryonoer",
     },
     {
       title: "Project 4",
       imageUrl: "/project1.png",
       description: "This is project 4 description",
+      URL: "https://github.com/aryonoer",
     },
     {
       title: "Project 5",
       imageUrl: "/project1.png",
       description: "This is project 5 description",
+      URL: "https://github.com/aryonoer",
     },
     {
       title: "Project 6",
       imageUrl: "/project1.png",
       description: "This is project 6 description",
+      URL: "https://github.com/aryonoer",
     },
     // Tambahkan project lainnya jika diperlukan
   ];
