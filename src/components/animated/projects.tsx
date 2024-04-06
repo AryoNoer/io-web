@@ -4,41 +4,41 @@ import ProjectCard from "./projectcards";
 const Projects: React.FC = () => {
   const projectData = [
     {
-      title: "Project 1",
-      imageUrl: "/project1.png",
-      description: "This is project 1 description",
-      URL: "https://instagram.com/aryonoer",
+      title: "Bem Fikti Website",
+      imageUrl: "/fikti-app.png",
+      description: "This is website for Information System Gunadarma University",
+      URL: "https://fikti-app.vercel.app/",
     },
     {
-      title: "Project 2",
+      title: "UI Design Follas App",
       imageUrl: "/project1.png",
-      description: "This is project 2 description",
-      URL: "https://github.com/aryonoer",
+      description: "Designing UI Follas App for Follas Cafe",
+      URL: "https://www.figma.com/file/xBhDUcaE6rd22odgIDzz0b/PI-FOLLAS?type=design&node-id=498%3A248&mode=design&t=ee0j8wjnWU2y4rdt-1",
     },
-    {
-      title: "Project 3",
-      imageUrl: "/project1.png",
-      description: "This is project 3 description",
-      URL: "https://github.com/aryonoer",
-    },
-    {
-      title: "Project 4",
-      imageUrl: "/project1.png",
-      description: "This is project 4 description",
-      URL: "https://github.com/aryonoer",
-    },
-    {
-      title: "Project 5",
-      imageUrl: "/project1.png",
-      description: "This is project 5 description",
-      URL: "https://github.com/aryonoer",
-    },
-    {
-      title: "Project 6",
-      imageUrl: "/project1.png",
-      description: "This is project 6 description",
-      URL: "https://github.com/aryonoer",
-    },
+    // {
+    //   title: "Project 3",
+    //   imageUrl: "/project1.png",
+    //   description: "This is project 3 description",
+    //   URL: "https://github.com/aryonoer",
+    // },
+    // {
+    //   title: "Project 4",
+    //   imageUrl: "/project1.png",
+    //   description: "This is project 4 description",
+    //   URL: "https://github.com/aryonoer",
+    // },
+    // {
+    //   title: "Project 5",
+    //   imageUrl: "/project1.png",
+    //   description: "This is project 5 description",
+    //   URL: "https://github.com/aryonoer",
+    // },
+    // {
+    //   title: "Project 6",
+    //   imageUrl: "/project1.png",
+    //   description: "This is project 6 description",
+    //   URL: "https://github.com/aryonoer",
+    // },
     // Tambahkan project lainnya jika diperlukan
   ];
 

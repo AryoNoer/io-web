@@ -16,7 +16,7 @@ export default function ProjectCard(props: Props) {
           src={props.imageUrl}
           width={300}
           height={200}
-          className="w-full"
+          className="w-full bg-center"
           alt={props.title}
         />
       </figure>

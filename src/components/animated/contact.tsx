@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         <Image src="./github.svg" alt="Github" width={30} height={30} />
       </a>
       <a
-        href="#"
+        href="https://www.instagram.com/aryonoer/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-light-1 p-2 rounded-full hover:scale-75 duration-300"
@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
         <Image src="./instagram.svg" alt="instagram" width={30} height={30} />
       </a>
       <a
-        href="#"
+        href="https://www.linkedin.com/in/aryonoer/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-light-1 p-2 rounded-full hover:scale-75 duration-300"
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
         <Image src="./linkedin.svg" alt="linkedin" width={30} height={30} />
       </a>
       <a
-        href="#"
+        href="mailto:aryojembaranmnoer@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-light-1 p-2 rounded-full hover:scale-75 duration-300"
